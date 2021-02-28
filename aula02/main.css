@@ -1,0 +1,7 @@
+/*main.css*/
+@charset utf-8;
+@import url("fontes.css"); 
+  body {
+    margin: 50;
+    background: #00ffff;
+  }
