@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+	  div {
+	    width: 100px;
+		height: 100px;
+		backgroud-color: red;
+		position: relative;
+		animation-name: teste;
+		animation-duration: 5s;
+		animation-iteration-count: infinite;
+	  }
+	  
+	  @keyframes teste {
+	    0% {background-color: red;
+		     left: 0px;
+		     top: 0px;
+			}
+	    25% {background-color: yellow;
+		     left: 300px;
+		     top: 0px;
+			}
+	    50% {background-color: blue;
+		     left: 300px;
+		     top: 300px;
+			}
+	    75% {background-color: green;
+		     left: 0px;
+		     top: 300px;
+			}
+	    100% {background-color: red;
+		     left: 0px;
+		     top: 0px;
+		     }
+		}	 
+	</style>
+  </head>
+  <body>
+    <p>Animação Teste</p>
+    <div></div>
+  </body>
+</html>
