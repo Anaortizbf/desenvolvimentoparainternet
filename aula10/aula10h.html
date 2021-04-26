@@ -1,0 +1,66 @@
+<html>
+  <head>
+    <title>Estilizando formulario: incorporado</title>
+    <style type="text/css">
+      form {
+        border: 2px solid #666699;
+        padding: 0px;
+      }
+      fieldset {
+        margin: 15px;
+		background-color: #eeeeee;
+      }
+      legend {
+        background-color: gray;
+        color: white;
+        padding: 5px 10px;
+      }
+      input {
+
+        background-color: #B0E0E6;
+        font: 12px verdana, arial, helvetica, sans-serif;
+        color:#003399;
+        border:1px solid #000099;
+      }
+      select {
+        background-color: #B0E0E6;
+        font:12px verdana, arial, helvetica, sans-serif;
+        color:#003399;
+      }
+      textarea {
+        background-color: #B0E0E6;
+        font:12px verdana, arial, helvetica, sans-serif;
+        color:#003399;
+      }
+    </style>
+  </head>
+  <body>
+    <form method="post" id="cadastro" action="obrigado.html">
+      <fieldset>
+      <legend>Dados Pessoais</legend>
+      <p><label for="nome">Nome:</label>
+         <input type="text" name="nome" id="nome">
+      </p>
+      <p><label for="email">E-mail:</label>
+         <input type="text" name="email" id="email">
+      </p>
+      </fieldset>
+      <fieldset>
+      <legend>Responda a Pesquisa</legend>
+      <p>Qual o carro dos seus sonhos?</p>
+      <select name="carros">
+        <option value="volvo">Volvo</option>
+        <option value="bmw">BMW</option>
+        <option value="mercedes">Mercedes</option>
+        <option value="audi">Audi</option>
+      </select>
+      <p>Comentários:</p>
+      <textarea rows="10" cols="30" name="comentarios" id="comentarios">
+      </textarea>
+	  <p><input type="file" name="fileToUpload" id="fileToUpload"></p>
+      <p><input type="submit" value="Enviar"></p>
+      </fieldset>
+    </form>
+  </body>
+</html>
+
