@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <style>
+      div.relative {
+        position: relative;
+        width: 600px;
+        height: 300px;
+        border: 3px solid #00ff00;
+      } 
+      div.absolute {
+        position: absolute;
+        top: 80px;
+        right: 0;
+        width: 400px;
+        height: 200px;
+        border: 3px solid #00ff00;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>position: absolute;</h2>
+    <p>Um elemento com position: absolute; é posicionado em relação ao ancestral mais próximo <br />
+    (em vez de posicionado em relação à janela de visualização, como fixo):</p>
+    <div class="relative">Esse div usa position: relative;
+      <div class="absolute">Esse div usa position: absolute;</div>
+    </div>
+</body>
+</html>
